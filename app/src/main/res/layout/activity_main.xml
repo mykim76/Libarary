@@ -32,15 +32,16 @@
         android:layout_marginTop="15dp">
 
         <TextView
-            android:id="@+id/phonNumTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="전화번호"/>
 
         <TextView
+            android:id="@+id/phonNumTxt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-            android:textSize="1dp"/>
+            android:text="01055994196"
+            android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btnCall"
