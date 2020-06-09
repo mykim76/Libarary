@@ -18,8 +18,11 @@ class MainActivity : BaseActivity() {
 
     override fun setValues() {
 
+        //ImageView imageView = (ImageView) findViewById(R.id.my_image_view);
+
         //Glide.with(this).load("http://goo.gl/gEgYUd").into(imageView);
-        Glide.with(mContent).load("http://thumb.mt.co.kr/06/2020/02/2020021308320311046_1.jpg/dims/optimize/")
+
+        Glide.with(mContent).load("https://thumb.mt.co.kr/06/2020/02/2020021308320311046_1.jpg/dims/optimize/").into(profilePhoto)
     }
 
     override fun setupEvents() {
