@@ -1,6 +1,7 @@
 package com.example.libarary
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
@@ -30,6 +31,13 @@ class MainActivity : BaseActivity() {
         profilePhoto.setOnClickListener {
 
             val myIntent = Intent(mContent,LargePhotoActivity::class.java)
+            startActivity(myIntent)
+        }
+
+        btnCall.setOnClickListener {
+
+            val myUri = Uri.parse("tel:${phonNumTxt.text}")
+            val myIntent = Intent(Intent.ACTION_CALL, myUri)
             startActivity(myIntent)
         }
     }

@@ -24,6 +24,31 @@
             app:civ_border_color="#FF000000"/>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/phonNumTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전화번호"/>
+
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+            android:textSize="1dp"/>
+
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전화걸기"/>
+
+    </LinearLayout>
 
 
 </LinearLayout>
